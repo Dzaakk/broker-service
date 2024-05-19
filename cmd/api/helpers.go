@@ -55,7 +55,7 @@ func (app *Config) errorJSON(w http.ResponseWriter, err error, status ...int) er
 		statusCode = status[0]
 	}
 
-	var payLoad jsonRepsonse
+	var payLoad jsonResponse
 	payLoad.Error = true
 	payLoad.Message = err.Error()
 
